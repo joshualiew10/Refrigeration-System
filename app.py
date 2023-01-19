@@ -270,8 +270,8 @@ def main():
 ########################################################################
 # Create subheaders for main performance indicator  
     new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Main Performance Indicator</p>'
-    st.markdown(new_title, unsafe_allow_html=True)
-    st.text('This section displays the main performance indicators of the refrigeration system.')
+    st.write(new_title, unsafe_allow_html=True)
+    st.write('This section displays the main performance indicators of the refrigeration system.')
     
     col1, col2, col3 = st.columns(3)
     col1.subheader('Coefficient of Performance')
