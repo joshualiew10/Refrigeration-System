@@ -237,9 +237,9 @@ def VF_prediction(input_data):
     print(VF_modelprediction)
     return VF_modelprediction
 
-    new_title = '<p style="font-family:monospace; font-size: 30px;">Two-Stage Refrigeration System</p>'
-    st.title('Two-Stage Refrigeration System')
-    st.text('This web app predicts the performance of a two-stage refrigeration plant.')
+new_title = '<p style="font-family:monospace; font-size: 30px;">Two-Stage Refrigeration System</p>'
+st.title('Two-Stage Refrigeration System')
+st.text('This web app predicts the performance of a two-stage refrigeration plant.')
 
 tab1, tab2, tab3 = st.tabs(["Performance data", "Process", "About"])
 ########################################################################
