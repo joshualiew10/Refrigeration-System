@@ -237,8 +237,8 @@ def VF_prediction(input_data):
     print(VF_modelprediction)
     return VF_modelprediction
 
-    new_title = '<p style="font-family:monospace; color:white; font-size: 30px;">Two-Stage Refrigeration System</p>'
-    st.title(new_title, unsafe_allow_html=True)
+    new_title = '<p style="font-family:monospace; font-size: 30px;">Two-Stage Refrigeration System</p>'
+    st.markdown(new_title, unsafe_allow_html=True)
     st.text('This web app predicts the performance of a two-stage refrigeration plant.')
 
 tab1, tab2, tab3 = st.tabs(["Performance data", "Process", "About"])
@@ -271,7 +271,7 @@ def main():
 # Create subheaders for main performance indicator  
     new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Main Performance Indicator</p>'
     st.markdown(new_title, unsafe_allow_html=True)
-    st.write('This section displays the main performance indicators of the refrigeration system.')
+    st.text('This section displays the main performance indicators of the refrigeration system.')
     
     col1, col2, col3 = st.columns(3)
     col1.subheader('Coefficient of Performance')
