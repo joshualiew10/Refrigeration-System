@@ -250,11 +250,11 @@ def main():
  with tab1:
     st.sidebar.header('User Input Parameters')
     def user_input_features():
-        RefrigerantFeed = st.sidebar.slider('Refrigerant Feed',5000,10000,7500, 1, "%f" )
+        RefrigerantFeed = st.sidebar.slider('Refrigerant feed',5000,10000,7500, 1, "%f" )
         DP_LV9004 = st.sidebar.slider('Pressure drop across LV-9004',1140,1180,1160)
         DP_LV9005 = st.sidebar.slider('Pressure drop across LV-9005',290,340,310)
-        CondenserDuty = st.sidebar.slider('Condenser Duty', 8.2, 8.6, 8.4)
-        S12Ratio = st.sidebar.slider('Flow ratio of S12', 0.01, 0.025, 0.017, 0.0001,"%f")
+        CondenserDuty = st.sidebar.slider('Condenser duty', 8.2, 8.6, 8.4)
+        S12Ratio = st.sidebar.slider('Stream 6 flow ratio', 0.01, 0.025, 0.017, 0.0001,"%f")
         data = {'RefrigerantFeed': RefrigerantFeed,
                 'DP_LV9004': DP_LV9004,
                 'DP_LV9005': DP_LV9005,
