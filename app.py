@@ -269,7 +269,7 @@ def main():
     
 ########################################################################
 # Create subheaders for main performance indicator  
-    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Main Performance Indicator</p>'
+    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;"><b>Main Performance Indicator</b></p>'
     st.markdown(new_title, unsafe_allow_html=True)
     st.text('This section displays the main performance indicators of the refrigeration system.')
     
@@ -309,7 +309,7 @@ def main():
 
 ########################################################################
 # Create subheaders for vessel operating conditions
-    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Vessel Operating Conditions</p>'
+    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;"><b>Vessel Operating Conditions</b></p>'
     st.markdown(new_title, unsafe_allow_html=True)
     st.text('This section displays the operating temperature and pressure of the vessels.')
     col7, col8, col9, col10, col11 = st.columns(5)
@@ -377,7 +377,7 @@ def main():
 
 ########################################################################
 # Create subheaders for flow through evaporators
-    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Mass Flowrate to Evaporators</p>'
+    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;"><b>Mass Flowrate to Evaporators</b></p>'
     st.markdown(new_title, unsafe_allow_html=True)
     st.text('This section displays the mass flow through all evaporators in the system.')
 
@@ -415,7 +415,7 @@ def main():
 
 ########################################################################
 # Create subheader for condenser
-    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Condenser Outlet</p>'
+    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;"><b>Condenser Outlet</b></p>'
     st.markdown(new_title, unsafe_allow_html=True)
     st.text('This section displays the mass flow and vapour fraction at the condenser outlet.')
 
