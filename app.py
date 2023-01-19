@@ -11,7 +11,12 @@ import streamlit as st
 import tensorflow as tf
 
 [theme]
-base = "dark"
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
+
 # Creating a function and loading the model
 def COP_prediction(input_data):
     COP_model=pickle.load(open('COP_model.sav','rb'))
