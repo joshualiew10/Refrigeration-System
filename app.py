@@ -10,7 +10,8 @@ import pickle
 import streamlit as st
 import tensorflow as tf
 
-
+[theme]
+base = "dark"
 # Creating a function and loading the model
 def COP_prediction(input_data):
     COP_model=pickle.load(open('COP_model.sav','rb'))
