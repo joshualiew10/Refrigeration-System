@@ -276,9 +276,7 @@ def main():
 
     
     col1, col2, col3 = st.columns(3)
-    new_title1 = '<p style="font-family:monospace; font-size: 20px;">Coefficient of Performance</p>'
-    st.markdown(new_title1, unsafe_allow_html=True)
-    #col1.subheader('Coefficient of Performance')
+    col1.subheader('Coefficient of Performance')
     result_COP = COP_prediction(df)
     series = pd.Series(result_COP[0])
     rounded_COP = round(series[0],3)
