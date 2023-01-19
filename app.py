@@ -238,7 +238,7 @@ def VF_prediction(input_data):
     return VF_modelprediction
 
 new_title = '<p style="font-family:monospace; font-size: 30px;">Two-Stage Refrigeration System</p>'
-st.title('Two-Stage Refrigeration System')
+st.markdown(new_title, unsafe_allow_html=True)
 st.text('This web app predicts the performance of a two-stage refrigeration plant.')
 
 tab1, tab2, tab3 = st.tabs(["Performance data", "Process", "About"])
