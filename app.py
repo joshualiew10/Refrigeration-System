@@ -162,77 +162,75 @@ def D0005P_prediction(input_data):
     print(D0005P_modelprediction)
     return D0005P_modelprediction
 
-# =============================================================================
-# def EB001_prediction(input_data):
-#     EB001_model=pickle.load(open('EB001_model.sav','rb'))
-#     scaler_EB001=pickle.load(open('scaler_EB001.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_EB001.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     EB001_modelprediction=EB001_model.predict(input_data_reshaped)
-#     print(EB001_modelprediction)
-#     return EB001_modelprediction
-# 
-# def EB002_prediction(input_data):
-#     EB002_model=pickle.load(open('EB002_model.sav','rb'))
-#     scaler_EB002=pickle.load(open('scaler_EB002.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_EB002.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     EB002_modelprediction=EB002_model.predict(input_data_reshaped)
-#     print(EB002_modelprediction)
-#     return EB002_modelprediction
-# 
-# def EB003_prediction(input_data):
-#     EB003_model=pickle.load(open('EB003_model.sav','rb'))
-#     scaler_EB003=pickle.load(open('scaler_EB003.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_EB003.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     EB003_modelprediction=EB003_model.predict(input_data_reshaped)
-#     print(EB003_modelprediction)
-#     return EB003_modelprediction
-# 
-# def EB004_prediction(input_data):
-#     EB004_model=pickle.load(open('EB004_model.sav','rb'))
-#     scaler_EB004=pickle.load(open('scaler_EB004.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_EB004.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     EB004_modelprediction=EB004_model.predict(input_data_reshaped)
-#     print(EB004_modelprediction)
-#     return EB004_modelprediction
-# 
-# def EB005_prediction(input_data):
-#     EB005_model=pickle.load(open('EB005_model.sav','rb'))
-#     scaler_EB005=pickle.load(open('scaler_EB005.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_EB005.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     EB005_modelprediction=EB005_model.predict(input_data_reshaped)
-#     print(EB005_modelprediction)
-#     return EB005_modelprediction
-# 
-# def Condenser_prediction(input_data):
-#     Condenser_model=pickle.load(open('Condenser_model.sav','rb'))
-#     scaler_Condenser=pickle.load(open('scaler_Condenser.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_Condenser.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     Condenser_modelprediction=Condenser_model.predict(input_data_reshaped)
-#     print(Condenser_modelprediction)
-#     return Condenser_modelprediction
-# 
-# def VF_prediction(input_data):
-#     VF_model=pickle.load(open('VF_model.sav','rb'))
-#     scaler_VF=pickle.load(open('scaler_VF.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_VF.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     VF_modelprediction=VF_model.predict(input_data_reshaped)
-#     print(VF_modelprediction)
-#     return VF_modelprediction
-# =============================================================================
+def EB001_prediction(input_data):
+    EB001_model=pickle.load(open('EB001_model.sav','rb'))
+    scaler_EB001=pickle.load(open('scaler_EB001.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_EB001.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    EB001_modelprediction=EB001_model.predict(input_data_reshaped)
+    print(EB001_modelprediction)
+    return EB001_modelprediction
+
+def EB002_prediction(input_data):
+    EB002_model=pickle.load(open('EB002_model.sav','rb'))
+    scaler_EB002=pickle.load(open('scaler_EB002.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_EB002.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    EB002_modelprediction=EB002_model.predict(input_data_reshaped)
+    print(EB002_modelprediction)
+    return EB002_modelprediction
+
+def EB003_prediction(input_data):
+    EB003_model=pickle.load(open('EB003_model.sav','rb'))
+    scaler_EB003=pickle.load(open('scaler_EB003.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_EB003.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    EB003_modelprediction=EB003_model.predict(input_data_reshaped)
+    print(EB003_modelprediction)
+    return EB003_modelprediction
+
+def EB004_prediction(input_data):
+    EB004_model=pickle.load(open('EB004_model.sav','rb'))
+    scaler_EB004=pickle.load(open('scaler_EB004.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_EB004.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    EB004_modelprediction=EB004_model.predict(input_data_reshaped)
+    print(EB004_modelprediction)
+    return EB004_modelprediction
+
+def EB005_prediction(input_data):
+    EB005_model=pickle.load(open('EB005_model.sav','rb'))
+    scaler_EB005=pickle.load(open('scaler_EB005.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_EB005.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    EB005_modelprediction=EB005_model.predict(input_data_reshaped)
+    print(EB005_modelprediction)
+    return EB005_modelprediction
+
+def Condenser_prediction(input_data):
+    Condenser_model=pickle.load(open('Condenser_model.sav','rb'))
+    scaler_Condenser=pickle.load(open('scaler_Condenser.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_Condenser.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    Condenser_modelprediction=Condenser_model.predict(input_data_reshaped)
+    print(Condenser_modelprediction)
+    return Condenser_modelprediction
+
+def VF_prediction(input_data):
+    VF_model=pickle.load(open('VF_model.sav','rb'))
+    scaler_VF=pickle.load(open('scaler_VF.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_VF.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    VF_modelprediction=VF_model.predict(input_data_reshaped)
+    print(VF_modelprediction)
+    return VF_modelprediction
 
 ########################################################################
 #Create title and slider
@@ -367,65 +365,63 @@ def main():
     rounded_D0005P = round(series[0],3)
     col16.write(rounded_D0005P)
 
-# =============================================================================
-# ########################################################################
-# # Create subheaders for flow through evaporators
-#     new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Mass Flowrate to Evaporators</p>'
-#     st.markdown(new_title, unsafe_allow_html=True)
-#     st.text('This section displays the mass flow through all evaporators in the system.')
-# 
-#     col17, col18, col19, col20, col21 = st.columns(5)
-#     
-#     col17.subheader('EB-001 (kg/h)')
-#     result_EB001 = EB001_prediction(df)
-#     series = pd.Series(result_EB001[0])
-#     rounded_EB001 = round(series[0],2)
-#     col17.write(rounded_EB001)
-# 
-#     col18.subheader('EB-002 (kg/h)')
-#     result_EB002 = EB002_prediction(df)
-#     series = pd.Series(result_EB002[0])
-#     rounded_EB002 = round(series[0],2)
-#     col18.write(rounded_EB002)
-# 
-#     col19.subheader('EB-003 (kg/h)')
-#     result_EB003 = EB003_prediction(df)
-#     series = pd.Series(result_EB003[0])
-#     rounded_EB003 = round(series[0],2)
-#     col19.write(rounded_EB003)
-# 
-#     col20.subheader('EB-004 (kg/h)')
-#     result_EB004 = EB004_prediction(df)
-#     series = pd.Series(result_EB004[0])
-#     rounded_EB004 = round(series[0],2)
-#     col20.write(rounded_EB004)
-# 
-#     col21.subheader('EB-005 (kg/h)')
-#     result_EB005 = EB005_prediction(df)
-#     series = pd.Series(result_EB005[0])
-#     rounded_EB005 = round(series[0],2)
-#     col21.write(rounded_EB005)
-# 
-# ########################################################################
-# # Create subheader for condenser
-#     new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Condenser Outlet</p>'
-#     st.markdown(new_title, unsafe_allow_html=True)
-#     st.text('This section displays the mass flow and vapour fraction at the condenser outlet.')
-# 
-#     col22, col23, col24, col25, col26 = st.columns(5)
-#     
-#     col22.subheader('Mass Flow (kg/h)')
-#     result_Condenser = Condenser_prediction(df)
-#     series = pd.Series(result_Condenser[0])
-#     rounded_Condenser = round(series[0],2)
-#     col22.write(rounded_Condenser)
-# 
-#     col23.subheader('Vapour Fraction')
-#     result_VF = VF_prediction(df)
-#     series = pd.Series(result_VF[0])
-#     rounded_VF = round(series[0],4)
-#     col23.write(rounded_VF)
-# =============================================================================
+########################################################################
+# Create subheaders for flow through evaporators
+    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Mass Flowrate to Evaporators</p>'
+    st.markdown(new_title, unsafe_allow_html=True)
+    st.text('This section displays the mass flow through all evaporators in the system.')
+
+    col17, col18, col19, col20, col21 = st.columns(5)
+    
+    col17.subheader('EB-001 (kg/h)')
+    result_EB001 = EB001_prediction(df)
+    series = pd.Series(result_EB001[0])
+    rounded_EB001 = round(series[0],2)
+    col17.write(rounded_EB001)
+
+    col18.subheader('EB-002 (kg/h)')
+    result_EB002 = EB002_prediction(df)
+    series = pd.Series(result_EB002[0])
+    rounded_EB002 = round(series[0],2)
+    col18.write(rounded_EB002)
+
+    col19.subheader('EB-003 (kg/h)')
+    result_EB003 = EB003_prediction(df)
+    series = pd.Series(result_EB003[0])
+    rounded_EB003 = round(series[0],2)
+    col19.write(rounded_EB003)
+
+    col20.subheader('EB-004 (kg/h)')
+    result_EB004 = EB004_prediction(df)
+    series = pd.Series(result_EB004[0])
+    rounded_EB004 = round(series[0],2)
+    col20.write(rounded_EB004)
+
+    col21.subheader('EB-005 (kg/h)')
+    result_EB005 = EB005_prediction(df)
+    series = pd.Series(result_EB005[0])
+    rounded_EB005 = round(series[0],2)
+    col21.write(rounded_EB005)
+
+########################################################################
+# Create subheader for condenser
+    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Condenser Outlet</p>'
+    st.markdown(new_title, unsafe_allow_html=True)
+    st.text('This section displays the mass flow and vapour fraction at the condenser outlet.')
+
+    col22, col23, col24, col25, col26 = st.columns(5)
+    
+    col22.subheader('Mass Flow (kg/h)')
+    result_Condenser = Condenser_prediction(df)
+    series = pd.Series(result_Condenser[0])
+    rounded_Condenser = round(series[0],2)
+    col22.write(rounded_Condenser)
+
+    col23.subheader('Vapour Fraction')
+    result_VF = VF_prediction(df)
+    series = pd.Series(result_VF[0])
+    rounded_VF = round(series[0],4)
+    col23.write(rounded_VF)
 
 
 
