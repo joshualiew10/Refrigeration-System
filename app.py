@@ -237,9 +237,9 @@ def VF_prediction(input_data):
     print(VF_modelprediction)
     return VF_modelprediction
 
-
-st.title('Two-Stage Refrigeration System')
-st.write('This web app predicts the performance of a two-stage refrigeration plant.')
+    new_title = '<p style="font-family:monospace; color:black; font-size: 30px;">Two-Stage Refrigeration System</p>'
+    st.title(new_title, unsafe_allow_html=True)
+    st.write('This web app predicts the performance of a two-stage refrigeration plant.')
 
 tab1, tab2, tab3 = st.tabs(["Performance data", "Process", "About"])
 ########################################################################
@@ -269,7 +269,7 @@ def main():
     
 ########################################################################
 # Create subheaders for main performance indicator  
-    new_title = '<p style="font-family:sans serif; color:red; font-size: 30px;">Main Performance Indicator</p>'
+    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Main Performance Indicator</p>'
     st.markdown(new_title, unsafe_allow_html=True)
     st.write('This section displays the main performance indicators of the refrigeration system.')
     
