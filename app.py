@@ -269,7 +269,7 @@ def main():
     
 ########################################################################
 # Create subheaders for main performance indicator  
-    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;"><b>Main Performance Indicator</b></p>'
+    new_title = '<p style="font-family:monospace; color:#FF4B4B; font-size: 30px;"><b>Main Performance Indicator</b></p>'
     st.markdown(new_title, unsafe_allow_html=True)
     st.text('This section displays the main performance indicators of the refrigeration system.')
     
