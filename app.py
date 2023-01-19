@@ -309,7 +309,7 @@ def main():
 
 ########################################################################
 # Create subheaders for vessel operating conditions
-    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;"><b>Vessel Operating Conditions</b></p>'
+    new_title = '<p style="font-family:monospace; color:#FF4B4B; font-size: 30px;"><b>Vessel Operating Conditions</b></p>'
     st.markdown(new_title, unsafe_allow_html=True)
     st.text('This section displays the operating temperature and pressure of the vessels.')
     col7, col8, col9, col10, col11 = st.columns(5)
@@ -377,7 +377,7 @@ def main():
 
 ########################################################################
 # Create subheaders for flow through evaporators
-    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;"><b>Mass Flowrate to Evaporators</b></p>'
+    new_title = '<p style="font-family:monospace; color:#FF4B4B; font-size: 30px;"><b>Mass Flowrate to Evaporators</b></p>'
     st.markdown(new_title, unsafe_allow_html=True)
     st.text('This section displays the mass flow through all evaporators in the system.')
 
@@ -415,7 +415,7 @@ def main():
 
 ########################################################################
 # Create subheader for condenser
-    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;"><b>Condenser Outlet</b></p>'
+    new_title = '<p style="font-family:monospace; color:#FF4B4B; font-size: 30px;"><b>Condenser Outlet</b></p>'
     st.markdown(new_title, unsafe_allow_html=True)
     st.text('This section displays the mass flow and vapour fraction at the condenser outlet.')
 
