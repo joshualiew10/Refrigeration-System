@@ -234,7 +234,7 @@ def VF_prediction(input_data):
 
 
 st.title('Two-Stage Refrigeration System')
-st.text('This app predicts the performance of a two-stage refrigeration plant.')
+st.text('This web app predicts the performance of a two-stage refrigeration plant.')
 
 tab1, tab2, tab3 = st.tabs(["Performance data", "Process", "About"])
 ########################################################################
