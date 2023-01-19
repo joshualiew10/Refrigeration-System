@@ -234,9 +234,9 @@ def VF_prediction(input_data):
 
 
 st.title('Two-Stage Refrigeration System')
-st.text('This app predicts the performance of a two-stage refrigeration plant in Kuantan, Malaysia.')
+st.text('This app predicts the performance of a two-stage refrigeration plant.')
 
-tab1, tab2, tab3 = st.tabs(["Performance data", "HYSYS", "PFD"])
+tab1, tab2, tab3 = st.tabs(["Performance data", "Process", "PFD"])
 ########################################################################
 #Create title and slider
 def main():
@@ -426,10 +426,6 @@ def main():
     rounded_VF = round(series[0],4)
     col23.write(rounded_VF)
 
-
-
-
-
 ########################################################################
 if __name__=='__main__':
     main()
@@ -441,54 +437,11 @@ with tab2:
     image = Image.open('HYSYS simulation.png')
     #displaying the image on streamlit app
     st.image(image, caption='Figure 1: Two-stage refrigeration cycle simulation on Aspen HYSYS.')
-    
-
-with tab3:
     image = Image.open('2StageVCR_Detailed.png')
     #displaying the image on streamlit app
     st.image(image, caption='Figure 2: Two-stage refrigeration system process flow diagram.')
 
 
-
-
-
-
-    # OLD Code
-    # Create subheaders for dependent variables
-        #st.subheader('Coefficient of Performance')
-        #result_COP = COP_prediction(df)
-        #rounded = round(result[0],2)
-        #st.write(result_COP)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   # st.subheader('Manual Input Section')
-    #Getting the input data from the user 
-    #RefrigerantFeed = st.number_input('Refrigerant Feed')
-    #MolFractionPropane = st.number_input('Mol fraction of propane')
-    #DP_LV9004 = st.number_input('Pressure drop across LV-9004')
-    #DP_LV9005 = st.number_input('Pressure drop across LV-9005')
-    #CondenserDuty = st.number_input('Condenser duty')
-    #S12Ratio = st.number_input('Split fraction of S12')
-    
-    #output =''
-    
-    #creating a button for prediction
-    #if st.button ('Predict the Coefficient of Performance'):
-        #result = COP_prediction([[RefrigerantFeed,MolFractionPropane, DP_LV9004, DP_LV9005, CondenserDuty, S12Ratio]])
-        #output = round(result[0],2)
-    #st.success(output)
-    
-
-    
-    
     
     
     
