@@ -236,7 +236,7 @@ def VF_prediction(input_data):
 st.title('Two-Stage Refrigeration System')
 st.text('This app predicts the performance of a two-stage refrigeration plant.')
 
-tab1, tab2, tab3 = st.tabs(["Performance data", "Process", "PFD"])
+tab1, tab2, tab3 = st.tabs(["Performance data", "Process", "About"])
 ########################################################################
 #Create title and slider
 def main():
@@ -441,8 +441,8 @@ with tab2:
     #displaying the image on streamlit app
     st.image(image, caption='Figure 2: Two-stage refrigeration system process flow diagram.')
 
-
-    
+    st.text ('
+             Computer simulation models have been the traditional use for remote monitoring and troubleshooting of chemical plants such that any variations in plant performance from the model predictions can be rapidly identified. The model can also simulate “what-if” scenarios, which include projecting what may hypothetically occur to the system under specific operating parameters in the future. The computerised model is typically a process simulation software and is often referred to as a “digital twin”, whereby it is an integrated, real-time digital version of the chemical plant. Process simulators are governed by first principles based physics framework that are used to detect crucial system behaviours such as absorption and compression. Once the performance of the simulation model is comparable to the actual plant's performance, it may be used to offer predictions for online decision support, such as suggesting the ideal operating conditions to troubleshooting and optimisation of the chemical plant.') 
     
     
     
