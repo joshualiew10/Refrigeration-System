@@ -237,7 +237,7 @@ def VF_prediction(input_data):
     print(VF_modelprediction)
     return VF_modelprediction
 
-new_title = '<p style="font-family:monospace; font-size: 30px;"><b>Two-Stage Refrigeration System</b></p>'
+new_title = '<p style="font-family:monospace; font-size: 40px;"><b>Two-Stage Refrigeration System</b></p>'
 st.markdown(new_title, unsafe_allow_html=True)
 st.text('This web app predicts the performance of a two-stage refrigeration plant.')
 
