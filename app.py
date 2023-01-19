@@ -62,107 +62,107 @@ def LiqLoss_prediction(input_data):
     print(LiqLoss_modelprediction)
     return LiqLoss_modelprediction
 
+def D0001T_prediction(input_data):
+    D0001T_model=pickle.load(open('D0001T_model.sav','rb'))
+    scaler_D0001T=pickle.load(open('scaler_D0001T.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0001T.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0001T_modelprediction=D0001T_model.predict(input_data_reshaped)
+    print(D0001T_modelprediction)
+    return D0001T_modelprediction
+
+def D0002T_prediction(input_data):
+    D0002T_model=pickle.load(open('D0002T_model.sav','rb'))
+    scaler_D0002T=pickle.load(open('scaler_D0002T.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0002T.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0002T_modelprediction=D0002T_model.predict(input_data_reshaped)
+    print(D0002T_modelprediction)
+    return D0002T_modelprediction
+
+def D0003T_prediction(input_data):
+    D0003T_model=pickle.load(open('D0003T_model.sav','rb'))
+    scaler_D0003T=pickle.load(open('scaler_D0003T.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0003T.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0003T_modelprediction=D0003T_model.predict(input_data_reshaped)
+    print(D0003T_modelprediction)
+    return D0003T_modelprediction
+
+def D0004T_prediction(input_data):
+    D0004T_model=pickle.load(open('D0004T_model.sav','rb'))
+    scaler_D0004T=pickle.load(open('scaler_D0004T.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0004T.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0004T_modelprediction=D0004T_model.predict(input_data_reshaped)
+    print(D0004T_modelprediction)
+    return D0004T_modelprediction
+
+def D0005T_prediction(input_data):
+    D0005T_model=pickle.load(open('D0005T_model.sav','rb'))
+    scaler_D0005T=pickle.load(open('scaler_D0005T.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0005T.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0005T_modelprediction=D0005T_model.predict(input_data_reshaped)
+    print(D0005T_modelprediction)
+    return D0005T_modelprediction
+
+def D0001P_prediction(input_data):
+    D0001P_model=pickle.load(open('D0001P_model.sav','rb'))
+    scaler_D0001P=pickle.load(open('scaler_D0001P.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0001P.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0001P_modelprediction=D0001P_model.predict(input_data_reshaped)
+    print(D0001P_modelprediction)
+    return D0001P_modelprediction
+
+def D0002P_prediction(input_data):
+    D0002P_model=pickle.load(open('D0002P_model.sav','rb'))
+    scaler_D0002P=pickle.load(open('scaler_D0002P.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0002P.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0002P_modelprediction=D0002P_model.predict(input_data_reshaped)
+    print(D0002P_modelprediction)
+    return D0002P_modelprediction
+
+def D0003P_prediction(input_data):
+    D0003P_model=pickle.load(open('D0003P_model.sav','rb'))
+    scaler_D0003P=pickle.load(open('scaler_D0003P.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0003P.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0003P_modelprediction=D0003P_model.predict(input_data_reshaped)
+    print(D0003P_modelprediction)
+    return D0003P_modelprediction
+
+def D0004P_prediction(input_data):
+    D0004P_model=pickle.load(open('D0004P_model.sav','rb'))
+    scaler_D0004P=pickle.load(open('scaler_D0004P.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0004P.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0004P_modelprediction=D0004P_model.predict(input_data_reshaped)
+    print(D0004P_modelprediction)
+    return D0004P_modelprediction
+
+def D0005P_prediction(input_data):
+    D0005P_model=pickle.load(open('D0005P_model.sav','rb'))
+    scaler_D0005P=pickle.load(open('scaler_D0005P.sav','rb'))
+    input_data_as_numpy_array=np.asarray(input_data)
+    std_data=scaler_D0005P.transform(input_data_as_numpy_array)
+    input_data_reshaped=std_data.reshape(1,-1)
+    D0005P_modelprediction=D0005P_model.predict(input_data_reshaped)
+    print(D0005P_modelprediction)
+    return D0005P_modelprediction
+
 # =============================================================================
-# def D0001T_prediction(input_data):
-#     D0001T_model=pickle.load(open('D0001T_model.sav','rb'))
-#     scaler_D0001T=pickle.load(open('scaler_D0001T.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0001T.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0001T_modelprediction=D0001T_model.predict(input_data_reshaped)
-#     print(D0001T_modelprediction)
-#     return D0001T_modelprediction
-# 
-# def D0002T_prediction(input_data):
-#     D0002T_model=pickle.load(open('D0002T_model.sav','rb'))
-#     scaler_D0002T=pickle.load(open('scaler_D0002T.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0002T.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0002T_modelprediction=D0002T_model.predict(input_data_reshaped)
-#     print(D0002T_modelprediction)
-#     return D0002T_modelprediction
-# 
-# def D0003T_prediction(input_data):
-#     D0003T_model=tf.keras.models.load_model('D0003T_model.h5')
-#     scaler_D0003T=pickle.load(open('scaler_D0003T.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0003T.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0003T_modelprediction=D0003T_model.predict(input_data_reshaped)
-#     print(D0003T_modelprediction)
-#     return D0003T_modelprediction
-# 
-# def D0004T_prediction(input_data):
-#     D0004T_model=pickle.load(open('D0004T_model.sav','rb'))
-#     scaler_D0004T=pickle.load(open('scaler_D0004T.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0004T.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0004T_modelprediction=D0004T_model.predict(input_data_reshaped)
-#     print(D0004T_modelprediction)
-#     return D0004T_modelprediction
-# 
-# def D0005T_prediction(input_data):
-#     D0005T_model=pickle.load(open('D0005T_model.sav','rb'))
-#     scaler_D0005T=pickle.load(open('scaler_D0005T.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0005T.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0005T_modelprediction=D0005T_model.predict(input_data_reshaped)
-#     print(D0005T_modelprediction)
-#     return D0005T_modelprediction
-# 
-# def D0001P_prediction(input_data):
-#     D0001P_model=pickle.load(open('D0001P_model.sav','rb'))
-#     scaler_D0001P=pickle.load(open('scaler_D0001P.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0001P.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0001P_modelprediction=D0001P_model.predict(input_data_reshaped)
-#     print(D0001P_modelprediction)
-#     return D0001P_modelprediction
-# 
-# def D0002P_prediction(input_data):
-#     D0002P_model=pickle.load(open('D0002P_model.sav','rb'))
-#     scaler_D0002P=pickle.load(open('scaler_D0002P.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0002P.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0002P_modelprediction=D0002P_model.predict(input_data_reshaped)
-#     print(D0002P_modelprediction)
-#     return D0002P_modelprediction
-# 
-# def D0003P_prediction(input_data):
-#     D0003P_model=pickle.load(open('D0003P_model.sav','rb'))
-#     scaler_D0003P=pickle.load(open('scaler_D0003P.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0003P.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0003P_modelprediction=D0003P_model.predict(input_data_reshaped)
-#     print(D0003P_modelprediction)
-#     return D0003P_modelprediction
-# 
-# def D0004P_prediction(input_data):
-#     D0004P_model=pickle.load(open('D0004P_model.sav','rb'))
-#     scaler_D0004P=pickle.load(open('scaler_D0004P.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0004P.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0004P_modelprediction=D0004P_model.predict(input_data_reshaped)
-#     print(D0004P_modelprediction)
-#     return D0004P_modelprediction
-# 
-# def D0005P_prediction(input_data):
-#     D0005P_model=pickle.load(open('D0005P_model.sav','rb'))
-#     scaler_D0005P=pickle.load(open('scaler_D0005P.sav','rb'))
-#     input_data_as_numpy_array=np.asarray(input_data)
-#     std_data=scaler_D0005P.transform(input_data_as_numpy_array)
-#     input_data_reshaped=std_data.reshape(1,-1)
-#     D0005P_modelprediction=D0005P_model.predict(input_data_reshaped)
-#     print(D0005P_modelprediction)
-#     return D0005P_modelprediction
-# 
 # def EB001_prediction(input_data):
 #     EB001_model=pickle.load(open('EB001_model.sav','rb'))
 #     scaler_EB001=pickle.load(open('scaler_EB001.sav','rb'))
@@ -299,75 +299,75 @@ def main():
     rounded_LiqLoss = round(series[0],2)
     col5.write(rounded_LiqLoss)
 
+########################################################################
+# Create subheaders for vessel operating conditions
+    new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Vessel Operating Conditions</p>'
+    st.markdown(new_title, unsafe_allow_html=True)
+    st.text('This section displays the operating temperature and pressure of the vessels.')
+    col7, col8, col9, col10, col11 = st.columns(5)
+    
+    col7.subheader('D0001 (°C)')
+    result_D0001T = D0001T_prediction(df)
+    series = pd.Series(result_D0001T[0])
+    rounded_D0001T = round(series[0],3)
+    col7.write(rounded_D0001T)
+
+    col8.subheader('D0002 (°C)')
+    result_D0002T = D0002T_prediction(df)
+    series = pd.Series(result_D0002T[0])
+    rounded_D0002T = round(series[0],3)
+    col8.write(rounded_D0002T)
+    
+    col9.subheader('D0003 (°C)')
+    result_D0003T = D0003T_prediction(df)
+    series = pd.Series(result_D0003T[0])
+    rounded_D0003T = round(series[0],3)
+    col9.write(rounded_D0003T)
+    
+    col10.subheader('D0004 (°C)')
+    result_D0004T = D0004T_prediction(df)
+    series = pd.Series(result_D0004T[0])
+    rounded_D0004T = round(series[0],3)
+    col10.write(rounded_D0004T)
+
+    col11.subheader('D0005 (°C)')
+    result_D0005T = D0005T_prediction(df)
+    series = pd.Series(result_D0005T[0])
+    rounded_D0005T = round(series[0],3)
+    col11.write(rounded_D0005T)
+
+    col12, col13, col14, col15, col16 = st.columns(5)
+    col12.subheader('D0001 (kPag)')
+    result_D0001P = D0001P_prediction(df)
+    series = pd.Series(result_D0001P[0])
+    rounded_D0001P = round(series[0],3)
+    col12.write(rounded_D0001P)
+ 
+    col13.subheader('D0002 (kPag)')
+    result_D0002P = D0002P_prediction(df)
+    series = pd.Series(result_D0002P[0])
+    rounded_D0002P = round(series[0],3)
+    col13.write(rounded_D0002P)
+
+    col14.subheader('D0003 (kPag)')
+    result_D0003P = D0003P_prediction(df)
+    series = pd.Series(result_D0003P[0])
+    rounded_D0003P = round(series[0],3)
+    col14.write(rounded_D0003P)
+
+    col15.subheader('D0004 (kPag)')
+    result_D0004P = D0004P_prediction(df)
+    series = pd.Series(result_D0004P[0])
+    rounded_D0004P = round(series[0],3)
+    col15.write(rounded_D0004P)
+
+    col16.subheader('D0005 (kPag)')
+    result_D0005P = D0005P_prediction(df)
+    series = pd.Series(result_D0005P[0])
+    rounded_D0005P = round(series[0],3)
+    col16.write(rounded_D0005P)
+
 # =============================================================================
-# ########################################################################
-# # Create subheaders for vessel operating conditions
-#     new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Vessel Operating Conditions</p>'
-#     st.markdown(new_title, unsafe_allow_html=True)
-#     st.text('This section displays the operating temperature and pressure of the vessels.')
-#     col7, col8, col9, col10, col11 = st.columns(5)
-#     
-#     col7.subheader('D0001 (°C)')
-#     result_D0001T = D0001T_prediction(df)
-#     series = pd.Series(result_D0001T[0])
-#     rounded_D0001T = round(series[0],3)
-#     col7.write(rounded_D0001T)
-# 
-#     col8.subheader('D0002 (°C)')
-#     result_D0002T = D0002T_prediction(df)
-#     series = pd.Series(result_D0002T[0])
-#     rounded_D0002T = round(series[0],3)
-#     col8.write(rounded_D0002T)
-#     
-#     col9.subheader('D0003 (°C)')
-#     result_D0003T = D0003T_prediction(df)
-#     series = pd.Series(result_D0003T[0])
-#     rounded_D0003T = round(series[0],3)
-#     col9.write(rounded_D0003T)
-#     
-#     col10.subheader('D0004 (°C)')
-#     result_D0004T = D0004T_prediction(df)
-#     series = pd.Series(result_D0004T[0])
-#     rounded_D0004T = round(series[0],3)
-#     col10.write(rounded_D0004T)
-# 
-#     col11.subheader('D0005 (°C)')
-#     result_D0005T = D0005T_prediction(df)
-#     series = pd.Series(result_D0005T[0])
-#     rounded_D0005T = round(series[0],3)
-#     col11.write(rounded_D0005T)
-# 
-#     col12, col13, col14, col15, col16 = st.columns(5)
-#     col12.subheader('D0001 (kPag)')
-#     result_D0001P = D0001P_prediction(df)
-#     series = pd.Series(result_D0001P[0])
-#     rounded_D0001P = round(series[0],3)
-#     col12.write(rounded_D0001P)
-#  
-#     col13.subheader('D0002 (kPag)')
-#     result_D0002P = D0002P_prediction(df)
-#     series = pd.Series(result_D0002P[0])
-#     rounded_D0002P = round(series[0],3)
-#     col13.write(rounded_D0002P)
-# 
-#     col14.subheader('D0003 (kPag)')
-#     result_D0003P = D0003P_prediction(df)
-#     series = pd.Series(result_D0003P[0])
-#     rounded_D0003P = round(series[0],3)
-#     col14.write(rounded_D0003P)
-# 
-#     col15.subheader('D0004 (kPag)')
-#     result_D0004P = D0004P_prediction(df)
-#     series = pd.Series(result_D0004P[0])
-#     rounded_D0004P = round(series[0],3)
-#     col15.write(rounded_D0004P)
-# 
-#     col16.subheader('D0005 (kPag)')
-#     result_D0005P = D0005P_prediction(df)
-#     series = pd.Series(result_D0005P[0])
-#     rounded_D0005P = round(series[0],3)
-#     col16.write(rounded_D0005P)
-# 
 # ########################################################################
 # # Create subheaders for flow through evaporators
 #     new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Mass Flowrate to Evaporators</p>'
@@ -425,8 +425,8 @@ def main():
 #     series = pd.Series(result_VF[0])
 #     rounded_VF = round(series[0],4)
 #     col23.write(rounded_VF)
-# 
 # =============================================================================
+
 
 
 
