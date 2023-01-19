@@ -273,8 +273,12 @@ def main():
     st.markdown(new_title, unsafe_allow_html=True)
     st.text('This section displays the main performance indicators of the refrigeration system.')
     
+
+    
     col1, col2, col3 = st.columns(3)
-    col1.subheader('Coefficient of Performance')
+    new_title1 = '<p style="font-family:monospace; font-size: 20px;">Coefficient of Performance</p>'
+    st.markdown(new_title1, unsafe_allow_html=True)
+    #col1.subheader('Coefficient of Performance')
     result_COP = COP_prediction(df)
     series = pd.Series(result_COP[0])
     rounded_COP = round(series[0],3)
