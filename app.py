@@ -236,17 +236,17 @@ def VF_prediction(input_data):
 #Create title and slider
 def main():
     # Giving a title
-    st.title('Two Stage Refrigeration System')
-    st.text('This app predicts the performance of a two stage refrigeration cycle.')
+    st.title('Two-Stage Refrigeration System')
+    st.text('This web app predicts the performance of a two-stage refrigeration plant.')
     # Sidebar header
     st.sidebar.header('User Input Parameters')
     # Define user input features
     def user_input_features():
-        RefrigerantFeed = st.sidebar.slider('Refrigerant Feed',5000,10000,7500, 1, "%f" )
+        RefrigerantFeed = st.sidebar.slider('Refrigerant feed',5000,10000,7500, 1, "%f" )
         DP_LV9004 = st.sidebar.slider('Pressure drop across LV-9004',1140,1180,1160)
         DP_LV9005 = st.sidebar.slider('Pressure drop across LV-9005',290,340,310)
-        CondenserDuty = st.sidebar.slider('Condenser Duty', 8.2, 8.6, 8.4)
-        S12Ratio = st.sidebar.slider('Flow ratio of S12', 0.01, 0.025, 0.017, 0.0001,"%f")
+        CondenserDuty = st.sidebar.slider('Condenser duty', 8.2, 8.6, 8.4)
+        S12Ratio = st.sidebar.slider('Stream 6 flow ratio', 0.01, 0.025, 0.017, 0.0001,"%f")
         data = {'RefrigerantFeed': RefrigerantFeed,
                 'DP_LV9004': DP_LV9004,
                 'DP_LV9005': DP_LV9005,
@@ -304,62 +304,62 @@ def main():
     st.text('This section displays the operating temperature and pressure of the vessels.')
     col7, col8, col9, col10, col11 = st.columns(5)
     
-    col7.subheader('D0001 (°C)')
+    col7.subheader('D-0001 (°C)')
     result_D0001T = D0001T_prediction(df)
     series = pd.Series(result_D0001T[0])
     rounded_D0001T = round(series[0],3)
     col7.write(rounded_D0001T)
 
-    col8.subheader('D0002 (°C)')
+    col8.subheader('D-0002 (°C)')
     result_D0002T = D0002T_prediction(df)
     series = pd.Series(result_D0002T[0])
     rounded_D0002T = round(series[0],3)
     col8.write(rounded_D0002T)
     
-    col9.subheader('D0003 (°C)')
+    col9.subheader('D-0003 (°C)')
     result_D0003T = D0003T_prediction(df)
     series = pd.Series(result_D0003T[0])
     rounded_D0003T = round(series[0],3)
     col9.write(rounded_D0003T)
     
-    col10.subheader('D0004 (°C)')
+    col10.subheader('D-0004 (°C)')
     result_D0004T = D0004T_prediction(df)
     series = pd.Series(result_D0004T[0])
     rounded_D0004T = round(series[0],3)
     col10.write(rounded_D0004T)
 
-    col11.subheader('D0005 (°C)')
+    col11.subheader('D-0005 (°C)')
     result_D0005T = D0005T_prediction(df)
     series = pd.Series(result_D0005T[0])
     rounded_D0005T = round(series[0],3)
     col11.write(rounded_D0005T)
 
     col12, col13, col14, col15, col16 = st.columns(5)
-    col12.subheader('D0001 (kPag)')
+    col12.subheader('D-0001 (kPag)')
     result_D0001P = D0001P_prediction(df)
     series = pd.Series(result_D0001P[0])
     rounded_D0001P = round(series[0],3)
     col12.write(rounded_D0001P)
  
-    col13.subheader('D0002 (kPag)')
+    col13.subheader('D-0002 (kPag)')
     result_D0002P = D0002P_prediction(df)
     series = pd.Series(result_D0002P[0])
     rounded_D0002P = round(series[0],3)
     col13.write(rounded_D0002P)
 
-    col14.subheader('D0003 (kPag)')
+    col14.subheader('D-0003 (kPag)')
     result_D0003P = D0003P_prediction(df)
     series = pd.Series(result_D0003P[0])
     rounded_D0003P = round(series[0],3)
     col14.write(rounded_D0003P)
 
-    col15.subheader('D0004 (kPag)')
+    col15.subheader('D-0004 (kPag)')
     result_D0004P = D0004P_prediction(df)
     series = pd.Series(result_D0004P[0])
     rounded_D0004P = round(series[0],3)
     col15.write(rounded_D0004P)
 
-    col16.subheader('D0005 (kPag)')
+    col16.subheader('D-0005 (kPag)')
     result_D0005P = D0005P_prediction(df)
     series = pd.Series(result_D0005P[0])
     rounded_D0005P = round(series[0],3)
@@ -369,7 +369,7 @@ def main():
 # Create subheaders for flow through evaporators
     new_title = '<p style="font-family:monospace; color:red; font-size: 30px;">Mass Flowrate to Evaporators</p>'
     st.markdown(new_title, unsafe_allow_html=True)
-    st.text('This section displays the mass flow through all evaporators in the system.')
+    st.text('This section displays the mass flowrate to all the evaporators in the system.')
 
     col17, col18, col19, col20, col21 = st.columns(5)
     
